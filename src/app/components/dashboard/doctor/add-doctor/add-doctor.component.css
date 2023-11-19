@@ -1,0 +1,208 @@
+.mat-grid-list {
+  overflow: hidden;
+}
+
+.mat-radio-button {
+  margin-right: 15px;
+}
+
+:host {
+  display: block;
+  min-width: 400px;
+}
+
+mat-dialog-content {
+  width: 800px;
+  height: 600px;
+}
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-container {
+  background-color: rgb(72, 33, 33);
+  width: 500px;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.dialog-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.dialog-title h2 {
+  margin: 0;
+}
+
+.dialog-body {
+  padding: 16px;
+}
+
+.dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+  border-top: 1px solid #ccc;
+}
+
+.dialog-footer button {
+  margin-left: 16px;
+}
+
+/* Styling for input fields */
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.mat-form-field .mat-form-field-infix {
+  color: #424242;
+}
+
+.mat-form-field .mat-form-field-infix input:focus {
+  box-shadow: 0 0 0 1px #42a5f5;
+}
+
+/* Styling for radio buttons */
+.mat-radio-group {
+  margin-bottom: 20px;
+}
+
+.mat-radio-button .mat-radio-outer-circle {
+  border-color: #42a5f5;
+}
+
+.mat-radio-button .mat-radio-inner-circle {
+  background-color: #42a5f5;
+}
+
+/* Styling for select field */
+.mat-form-field .mat-form-field-wrapper {
+  border-color: #42a5f5;
+}
+
+.mat-select-arrow {
+  color: #42a5f5;
+}
+
+.mat-select-panel {
+  background-color: #f1f1f1;
+  color: #424242;
+}
+
+/* Styling for datepicker */
+.mat-datepicker-toggle {
+  color: #42a5f5;
+}
+
+.mat-button-wrapper .mat-datepicker-toggle-default-icon {
+  color: #42a5f5;
+}
+
+/* Styling for form errors */
+.mat-form-field.mat-form-field-invalid .mat-form-field-infix {
+  border-color: #f44336;
+}
+
+.mat-form-field .mat-error {
+  font-size: 0.85rem;
+}
+
+/* Styling for dialog actions buttons */
+.mat-dialog-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.mat-raised-button {
+  background-color: #42a5f5;
+  color: #fff;
+  font-weight: 700;
+  margin: 0 10px;
+}
+
+.mat-raised-button:hover {
+  background-color: #1976d2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for dialog title */
+.mat-dialog-title {
+  font-size: 1.5rem;
+  color: #42a5f5;
+}
+
+/* Styling for divider */
+.mat-divider {
+  border-top: 1px solid #42a5f5;
+  margin-bottom: 20px;
+}
+
+/* Set max-width for dialog content */
+.mat-dialog-content {
+  max-width: 800px;
+}
+
+/* Set max-width for dialog title */
+.mat-dialog-title {
+  max-width: 800px;
+}
+
+/* Style the whole dialog */
+.mat-dialog-container {
+ 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.20);
+}
+
+/* Style the overlay behind the dialog */
+.cdk-overlay-container {
+  background-color: rgba(0, 0, 0, 0.50);
+}
+
+/* Set background color for the dialog */
+.mat-dialog-container {
+  background-color: #ec0e0e !important;
+}
+
+/* Set box shadow for the dialog */
+.mat-dialog-container {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Set border radius for the dialog */
+.mat-dialog-container {
+  border-radius: 10px;
+}
+
+/* Adjust the font color for the dialog */
+.mat-dialog-container {
+  color: #424242;
+}
+
+/* Set max-width for dialog content and title */
+.mat-dialog-content,
+.mat-dialog-title {
+  max-width: 800px;
+}
+
+/* Set font family for whole dialog */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}

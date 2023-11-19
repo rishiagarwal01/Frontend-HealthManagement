@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-md-4 mt-3">
+      <mat-card class="add-doc text-center" (click)="addDoctor()">
+        <mat-card-content class="demo">
+          Add Doctor <br>
+          <mat-icon>group_add</mat-icon>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
+
+<h2 style="font-weight: 700;" color="primary" class="mt-4">Doctors Information</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <!-- <th scope="col">ID</th> -->
+      <th scope="col">Name</th>
+      <th scope="col">Gender</th>
+      <th scope="col">DOB</th>
+      <th scope="col">Number</th>
+      <th scope="col">Email</th>
+      <th scope="col">Department</th>
+      <th scope="col">Action</th>
+      <!-- <th scope="col"><i class="fas fa-edit "></i></th> -->
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pat of doctor ">
+      <td>{{pat.name}}</td>
+      <td>{{pat.gender}}</td>
+      <td>{{pat.dob}}</td>
+      <td>{{pat.number}}</td>
+      <td>{{pat.email}}</td>
+      <td>{{pat.department}}</td>
+      <td><button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="editDoctor(pat)">
+          <mat-icon><i class="fas fa-edit    "></i></mat-icon>
+          <span >Edit</span>
+        </button>
+       
+        <button mat-menu-item>
+          <mat-icon><i class="fa fa-trash" aria-hidden="true"></i></mat-icon>
+          <span>Delete</span>
+        </button>
+      </mat-menu>
+      </td>
+    </tr>
+  </tbody>
+</table>

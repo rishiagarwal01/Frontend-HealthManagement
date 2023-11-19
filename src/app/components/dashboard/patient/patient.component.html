@@ -1,0 +1,22 @@
+<p>patient works!</p>
+<table class="table">
+    <thead>
+      <tr>
+        <!-- <th scope="col">ID</th> -->
+        <th scope="col">Name</th>
+        <th scope="col">Gender</th>
+        <th scope="col">DOB</th>
+        <th scope="col">Number</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pat of patient ">
+        <td>{{pat.name}}</td>
+        <td>{{pat.gender}}</td>
+        <td>{{pat.dob}}</td>
+        <td>{{pat.number}}</td>
+        <td>{{pat.email}}</td>
+      </tr>
+    </tbody>
+  </table>

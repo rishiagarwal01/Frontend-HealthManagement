@@ -1,0 +1,48 @@
+<!-- <div class="row">
+  <div class="col-md-6">
+    <img src="../../../assets/img/support.jpg" alt="Image Description"  style="width: 80%; height: 100%;">
+  </div>
+  <div class="col-md-6">
+    <h5>Connect with Doctor</h5>
+
+    <span>PeerId: {{peerId}}</span>
+    <div style="width: 400px; height: 300px; border: 2px solid" id="remote-video"></div>
+
+    <br>
+    <div style="margin-top: 20px;">
+      <input type="text" placeholder="Peer Id" [(ngModel)]='peerIdShare'/>
+      <button class="button" (click)="connectWithPeer()">Call Doctor</button>
+      <button class="button" (click)="screenShare()">Screen share</button>
+    </div>
+  </div>
+</div> -->
+
+<div class="container-fluid main-container-width-with-header">
+  <h3>Support</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="support-img-container">
+        <img src="../../../assets/img/support.jpg" alt="Support Image">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="connect-doctor-container">
+        <h2>Connect with Doctor</h2><br>
+        <h4>PeerId:{{peerId}}</h4>
+        <div class="video-container">
+          <div class="remote-video" id="remote-video"></div>
+        </div>
+        <div class="form-container">
+          <div class="input-container">
+            <label for="peerIdShare">Enter Peer Id:</label>
+            <input type="text" id="peerIdShare" [(ngModel)]="peerIdShare">
+          </div>
+          <div class="button-container">
+            <button class="button call-doctor-button" (click)="connectWithPeer()">Call Doctor</button>
+            <button class="button screen-share-button" (click)="screenShare()">Screen Share</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
